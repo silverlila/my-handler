@@ -11,7 +11,10 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "pnpm build && node --test ./dist/test.js"
+    "test": "pnpm build && node --test ./dist/test.js",
+    "release:patch": "pnpm version patch && git push origin main --follow-tags",
+    "release:minor": "pnpm version minor && git push origin main --follow-tags",
+    "release:major": "pnpm version major && git push origin main --follow-tags"
   },
   "keywords": [],
   "author": "Silvi Lila",
