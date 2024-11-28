@@ -9,6 +9,10 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silverlila/my-handler"
+  },
   "scripts": {
     "build": "tsc",
     "test": "pnpm build && node --test ./dist/test.js",
@@ -16,7 +20,23 @@
     "release:minor": "pnpm version minor && git push origin main --follow-tags",
     "release:major": "pnpm version major && git push origin main --follow-tags"
   },
-  "keywords": [],
+  "keywords": [
+    "handler",
+    "context",
+    "context-injection",
+    "typescript",
+    "zod",
+    "type-safe",
+    "validation",
+    "input-validation",
+    "middleware",
+    "api-handler",
+    "module-handler",
+    "nested-modules",
+    "api-factory",
+    "function-wrapper",
+    "functional-programming"
+  ],
   "author": "Silvi Lila",
   "license": "MIT",
   "dependencies": {
